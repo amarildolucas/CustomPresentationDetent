@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView {
     @State private var isPresentingSheet: Bool = false
+    @State private var selectDetent: PresentationDetent = .bottom
 }
 
 extension ContentView: View {
@@ -25,7 +26,13 @@ extension ContentView: View {
                 .background(Color.accentColor)
                 .cornerRadius(8)
             }
-            .sheet(isPresented: $isPresentingSheet, content: ContentModalSheet.init)
+            .sheet(isPresented: $isPresentingSheet) {
+                ContentModalSheet()
+                    .presentationDetents(
+                        [.bottom, .mediumBottomBar, .largeBottomBar],
+                        selection: $selectDetent
+                    )
+            }
         }
         .padding()
     }

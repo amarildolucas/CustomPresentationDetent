@@ -12,6 +12,7 @@
 		2402FB0729B8D66800DA9B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2402FB0629B8D66800DA9B59 /* Assets.xcassets */; };
 		2402FB0A29B8D66800DA9B59 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2402FB0929B8D66800DA9B59 /* Preview Assets.xcassets */; };
 		2402FB1129B8D89600DA9B59 /* ContentModalSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402FB1029B8D89600DA9B59 /* ContentModalSheet.swift */; };
+		2402FB1729B8F19F00DA9B59 /* PresentationDetent+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402FB1629B8F19F00DA9B59 /* PresentationDetent+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2402FB0629B8D66800DA9B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2402FB0929B8D66800DA9B59 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2402FB1029B8D89600DA9B59 /* ContentModalSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModalSheet.swift; sourceTree = "<group>"; };
+		2402FB1629B8F19F00DA9B59 /* PresentationDetent+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PresentationDetent+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		2402FB0129B8D66600DA9B59 /* CustomPresentationDetent */ = {
 			isa = PBXGroup;
 			children = (
+				2402FB1529B8EA5D00DA9B59 /* Extension */,
 				2402FB1429B8D8B300DA9B59 /* Resources */,
 				2402FB1329B8D8AA00DA9B59 /* App */,
 				2402FB1229B8D89A00DA9B59 /* Views */,
@@ -92,6 +95,14 @@
 				2402FB0629B8D66800DA9B59 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2402FB1529B8EA5D00DA9B59 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2402FB1629B8F19F00DA9B59 /* PresentationDetent+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2402FB0529B8D66600DA9B59 /* ContentView.swift in Sources */,
+				2402FB1729B8F19F00DA9B59 /* PresentationDetent+Extension.swift in Sources */,
 				2402FB0329B8D66600DA9B59 /* CustomPresentationDetentApp.swift in Sources */,
 				2402FB1129B8D89600DA9B59 /* ContentModalSheet.swift in Sources */,
 			);
